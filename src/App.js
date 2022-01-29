@@ -7,6 +7,7 @@ import UsersPage from './pages/UsersPage';
 import TodosPage from './pages/TodosPage';
 import Layout from './components/Layout';
 import { Container } from 'react-bootstrap';
+import UserDetailPage from './pages/UserDetailPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="users" element={<UsersPage />} />
           <Route path="todos" element={<TodosPage />} />
+          <Route path="user-detail/:id" element={<UserDetailPage />} />
           {/* eğer yukarıdaki pathlerden birisi ile eşleşilemediği takdirde aşağıdaki route componente girecektir. */}
           <Route path="*" element={<div>Sayfa bulunamadı</div>} />
         </Route>
@@ -26,4 +28,5 @@ function App() {
   );
 }
 
+// :id veya :name ne istersek yazabiliriz. :value ile tanımladığımız route yapısına dinamik route diyoruz. buraya 1,2,3 gibi user'a ait id değerini gönderip sonra UserDetailPage componentinde bu id değerine ulaşacağız.
 export default App;

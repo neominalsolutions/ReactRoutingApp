@@ -15,16 +15,16 @@ function Layout() {
             <Container>
                 <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Link style={{ padding: '5px' }} to="users" > Users </Link>
-                    <Link style={{ padding: '5px' }} to="todos" > Todos </Link>
+                         <Link style={{ padding: '5px', textDecoration:'none' }} to="users" > Users </Link> 
+                         <Link style={{ padding: '5px', textDecoration:'none' }} to="todos" > Todos </Link>
                 </Nav>
             </Container>
         </Navbar>
 
- 
-        <Container style={{minHeight:'20rem'}}>
+
+        <Container style={{ minHeight: '20rem' }}>
             <Row>
-                       {/* dinamik olarak syafadan sayfaya yönlendirme ile değişecek olan kısım */}
+                {/* dinamik olarak syafadan sayfaya yönlendirme ile değişecek olan kısım */}
                 <Outlet />
             </Row>
         </Container>
@@ -34,7 +34,7 @@ function Layout() {
             <Card.Body>
                 <Card.Title>ReactJS Routing</Card.Title>
                 <Card.Text>
-                   React Routing Uygulaması
+                    React Routing Uygulaması
                 </Card.Text>
             </Card.Body>
         </Card>

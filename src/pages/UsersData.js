@@ -1,0 +1,32 @@
+export const UserData = [
+    {
+        id:1,
+        name:'Burhan',
+        surname:'Kara'
+    },
+    {
+        id:2,
+        name:'Ayşegül',
+        surname:'Avcu'    
+    },
+    {
+        id:28,
+        name:'Erhan',
+        surname:'Mert'
+    },
+    {
+        id:10,
+        name:'Sidar',
+        surname:'Şahin'
+    },
+    {
+        id:9,
+        name:'Ahmet',
+        surname:'Bilgin'
+    },
+    {
+        id:11,
+        name:'Harun',
+        surname:'Durak'
+    }
+]
