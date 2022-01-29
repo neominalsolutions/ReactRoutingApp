@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+// BrowserRouter tarayıcı üzerinde sayfalama yapılacak şekilde uygulamanıza yönlendirme özelliği kazandırır
+// Uygulama App component üzerinden çalıştığı için aşağıdaki App componenti içerisine aldık.
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
