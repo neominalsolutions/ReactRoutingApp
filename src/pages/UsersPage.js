@@ -12,7 +12,7 @@ function UsersPage() {
   return <ListGroup>
     {
       UserData.map((item, key) => {
-        return <ListGroup.Item key={key} disabled>
+        return <ListGroup.Item key={key} >
           <Link to={`/user-detail/${item.id}`}>
             {item.name} {item.surname}
           </Link>
